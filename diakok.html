@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurzusok és Diákok Kezelése</title>
+    <link rel="stylesheet" href="stilus_diakok.css">
+</head>
+<body>
+    <div>
+        <h1>Diák adat kezelés</h1>
+    </div>
+    <div>
+        <button onclick="kurzusokMegjelenitese()">Kurzusok</button>
+        <button onclick="diakokMegjelenitese()">Diákok</button>
+    </div>
+    <div id="kurzusok" style="display:none;">
+        <h3>Kurzusok</h3>
+        <ul id="kurzusokLista"></ul>
+        <button id="ujKurzusBtn" onclick="ujKurzus()">Új kurzus</button>
+    </div>
+    <div id="diakok" style="display:none;">
+        <h3>Diákok</h3>
+        <ul id="diakokLista"></ul>
+        <button id="ujDiakBtn" onclick="ujDiak()">Új diák</button>
+    </div>
+    
+    <div id="kurzusForm" style="display:none;">
+        <h3>Új kurzus</h3>
+        <input type="text" id="kurzusNev" placeholder="Kurzus neve">
+        <button onclick="kurzusMentese()">Mentés</button>
+        <button onclick="kurzusFormMegerese()">Mégsem</button>
+    </div>
+    
+    <div id="diakForm" style="display:none;">
+        <h3>Új diák</h3>
+        <input type="text" id="diakNev" placeholder="Diák neve">
+        <button onclick="diakMentese()">Mentés</button>
+        <button onclick="diakFormMegerese()">Mégsem</button>
+    </div>
+    
+    <div id="hibaUzenet"></div>
+
+    <script src="script_adatok.js"></script>
+</body>
+</html>
